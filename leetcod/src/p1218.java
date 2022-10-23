@@ -17,9 +17,6 @@ public class p1218 {
              product *= rem;
              n /= 10;
         }
-        int max = Math.max(sum, product);
-        int min = Math.min(sum, product);
-
-        return max - min;
+        return product - sum;
     }
 }
