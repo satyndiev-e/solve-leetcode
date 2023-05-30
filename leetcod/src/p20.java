@@ -12,10 +12,11 @@ class p20 {
                 if(list.empty()) return false;
                 if(c == ')' && list.peek()  == '(')
                     list.pop();
-                else if (c == '}' && list.peek() == '{')
+                if (c == '}' && list.peek() == '{')
                     list.pop();
-                else if (c == ']' && list.peek() == '[')
+                if (c == ']' && list.peek() == '[')
                     list.pop();
+                else return false;
             }
         }
         return list.empty();
